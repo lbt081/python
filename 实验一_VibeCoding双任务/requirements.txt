@@ -1,0 +1,11 @@
+# 实验一：Excel 销售报表
+pandas>=2.2
+openpyxl>=3.1
+
+# 实验二：FastAPI 记账接口
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7
+sqlalchemy>=2.0,<2.1
+pytest>=8.0
+httpx>=0.27
