@@ -1,0 +1,7 @@
+# 文档分析工具与 Agent 化进阶：运行依赖
+# 建议使用 Python 3.10 或更高版本
+jieba>=0.42.1
+wordcloud>=1.9.4
+matplotlib>=3.7
+requests>=2.31
+watchdog>=3.0
