@@ -1,0 +1,6 @@
+# 进阶挑战：Playwright 动态渲染爬虫依赖
+# Python 3.10+
+playwright>=1.40
+pandas>=2.0
+requests>=2.31
+beautifulsoup4>=4.12

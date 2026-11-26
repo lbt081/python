@@ -1,0 +1,58 @@
+{
+  "cnblogs": {
+    "name": "博客园 Python 分类",
+    "start_url": "https://www.cnblogs.com/cate/python/",
+    "item_selector": "article.post-item",
+    "fields": [
+      {"label": "标题", "selector": "a.post-item-title", "kind": "text"},
+      {"label": "发布时间", "selector": "footer .post-meta-item span", "kind": "text"},
+      {"label": "作者", "selector": "a.post-item-author", "kind": "text"},
+      {"label": "详情链接", "selector": "a.post-item-title", "kind": "href"}
+    ],
+    "next_selector": "a[rel=\"next\"]",
+    "pager_selector": ".pager a, .pagination a",
+    "pager_texts": ["下一页", "下一頁", ">", "»"]
+  },
+  "books": {
+    "name": "Books to Scrape",
+    "start_url": "https://books.toscrape.com/",
+    "item_selector": "article.product_pod",
+    "fields": [
+      {"label": "书名", "selector": "h3 a", "kind": "title"},
+      {"label": "价格", "selector": ".price_color", "kind": "text"},
+      {"label": "库存", "selector": ".availability", "kind": "text"},
+      {"label": "详情链接", "selector": "h3 a", "kind": "href"}
+    ],
+    "next_selector": "li.next a",
+    "pager_selector": "",
+    "pager_texts": []
+  },
+  "quotes": {
+    "name": "Quotes to Scrape",
+    "start_url": "https://quotes.toscrape.com/",
+    "item_selector": "div.quote",
+    "fields": [
+      {"label": "名言", "selector": "span.text", "kind": "text"},
+      {"label": "作者", "selector": "small.author", "kind": "text"},
+      {"label": "标签", "selector": "div.tags a.tag", "kind": "text_all"},
+      {"label": "作者详情", "selector": "span a", "kind": "href"}
+    ],
+    "next_selector": "li.next a",
+    "pager_selector": "",
+    "pager_texts": []
+  },
+  "countries": {
+    "name": "Countries of the World",
+    "start_url": "https://www.scrapethissite.com/pages/simple/",
+    "item_selector": "div.country",
+    "fields": [
+      {"label": "国家", "selector": "h3.country-name", "kind": "text"},
+      {"label": "首都", "selector": "span.country-capital", "kind": "text"},
+      {"label": "人口", "selector": "span.country-population", "kind": "text"},
+      {"label": "面积", "selector": "span.country-area", "kind": "text"}
+    ],
+    "next_selector": "",
+    "pager_selector": "",
+    "pager_texts": []
+  }
+}
